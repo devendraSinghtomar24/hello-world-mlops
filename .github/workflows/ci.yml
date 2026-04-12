@@ -1,4 +1,4 @@
-name: CI-Train and save the model
+name: CI-train and save the model
 on:
   push: 
    branches: [ main ]
