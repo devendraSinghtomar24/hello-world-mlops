@@ -3,6 +3,7 @@ Simple training script:
 - loads iris dataset from sklearn
 - trains a LogisticRegression
 - saves model to model.pkl
+- saves model to model.pkl
 """
 
 from sklearn.datasets import load_iris
