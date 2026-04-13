@@ -1,23 +1,42 @@
-name: CI-train and save the model
-on:
-  push: 
-   branches: [ matser ]
+# name: CI-train and save the model
+# on:
+#   push: 
+#    branches: [ matser ]
+#   pull_request:
+#     branches: [ matser ]
+#    jobs:
+#     test-job:
+#     runs-on: ubuntu-latest
 
-  pull_request:
+#     steps:
+#      - name: Print message
+#        run: echo "✅ Pipeline is working!"
 
-   branches: [ matser ]
 
-jobs:
- matrix-pip:
-  name: train and save model
-  runs-on : ubuntu-latest
-  strategy:
-    matrix:
-     python : [3.11,3.12]
+#        on:
+#   push:
+#     branches: [master]
+#   workflow_dispatch:
 
-  steps: 
-  - name : checkout code
-    uses: actions/checkout@v4
+# jobs:
+#   test-job:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Print message
+#         run: echo "✅ Pipeline is working!"
+
+# jobs:
+#  matrix-pip:
+#   name: train and save model
+#   runs-on : ubuntu-latest
+#   strategy:
+#     matrix:
+#      python : [3.11,3.12]
+
+#   steps: 
+#   - name : checkout code
+#     uses: actions/checkout@v4
 
 #   - name: setup python
 #     uses: actions/setup-python@v4
