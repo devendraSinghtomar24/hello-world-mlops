@@ -1,11 +1,11 @@
 # name: CI-train and save the model
 # on:
 #   push: 
-#    branches: [ main ]
+#    branches: [ matser ]
 
 #   pull_request:
 
-#    branches: [ main ]
+#    branches: [ matser ]
 
 # jobs:
 #  matrix-pip:
@@ -42,9 +42,9 @@ name: CI-train and save the model
 
 on:
   push:
-    branches: [main]
+    branches: [matser]
   pull_request:
-    branches: [main]
+    branches: [matser]
 
 jobs:
   matrix-pip:
